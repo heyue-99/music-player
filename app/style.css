@@ -1,0 +1,22 @@
+body{
+	background-color: green;
+}
+@keyframes rotate{
+	from{
+		transform: rotateZ(0);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+.img{
+	background-image: url(./circle.svg); 
+	width: 200px;
+	height: 200px;
+	margin: 20px auto;
+	animation: rotate 5s linear infinite;
+    animation-play-state: paused;
+}
+.play{
+	animation-play-state: running;
+}
